@@ -1,5 +1,5 @@
 # incrGamma
-Incremental computation of machine learning models with Gamma summarization  matrix. The theory is in http://www2.cs.uh.edu/~dbms/pdf/j_rgamma.pdf
+Incremental computation of machine learning models with Gamma summarization  matrix. The theory is in http://www2.cs.uh.edu/~dsss/pdf/j_incrgamma.pdf
 
 **build the package**
 
