@@ -1,0 +1,7 @@
+These programs are done in Python.
+
+
+I used the Python scikit-learn library to implement the incremental algorithms.
+
+
+We used these programs to compare with our solution using R and C++. 
