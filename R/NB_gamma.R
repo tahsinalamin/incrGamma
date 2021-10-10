@@ -3,7 +3,7 @@
 
 
 NB.gamma <- function(filename,class="-1"){
-  library(data.table)
+  #library(data.table)
   library(chunkR)
   library(e1071)
   k_gamma_cpp <- function(X, k, class_col) {
