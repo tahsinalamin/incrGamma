@@ -1,15 +1,17 @@
 # incrGamma
 Incremental computation of machine learning models with Gamma summarization  matrix. The theory is in http://www2.cs.uh.edu/~dsss/pdf/j_incrgamma.pdf
 
-## HOW TO RUN ##
-**build the package**
+## HOW TO COMPILE ##
+**Command to build the package**
 
 R CMD build incrGamma
 
-**install the package**
+**Command install the package**
 
 R CMD INSTALL build_package_name
 
+
+## HOW TO RUN ##
 **Load and use the package in R prompt**
 
 library('incrGamma')
@@ -22,7 +24,7 @@ NB.gamma('test1.csv')
 
 kmeans.gamma('test1.csv',k=3)
 
-**Required R packages**
+## Required R packages ##
  - Rcpp
  - chunkR
  - e1071
