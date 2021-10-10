@@ -21,7 +21,7 @@ gamma.test <- function(filename, sparse="Y") {
   
   
   print("**gamma started**")
-  print(sparse)
+  #print(sparse)
   
   #read the dataset
   partial_gamma <- matrix() #gamma for each chunk
@@ -29,10 +29,10 @@ gamma.test <- function(filename, sparse="Y") {
   ChunkSize = as.integer(sqrt(nrow(X_Matrix)))
   
   ### LR in R ###
-  R_beta = lm(X_Matrix$X90 ~ .,data=X_Matrix)$coefficients
+  R_beta = lm(X_Matrix$X90 ~ .,data=X_Matrix)$coefficients #change this line based on data set
   
   #declare the lists to store the relative errors: needed when computing errors in each iteration
-  #error_list_LR = list()
+  error_list_LR = list()
 
   
   t0= proc.time() #time starts
