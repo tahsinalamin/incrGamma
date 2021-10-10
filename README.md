@@ -13,9 +13,17 @@ R CMD INSTALL build_package_name
 
 library('incrGamma')
 
+LR('test1.csv',sparse=N)
+
 LRnPCA('test1.csv',sparse=Y)
 
 NB.gamma('test1.csv')
 
 kmeans.gamma('test1.csv',k=3)
 
+**Required R packages**
+ - Rcpp
+ - chunkR
+ - e1071
+ - pracma
+ - data.table
