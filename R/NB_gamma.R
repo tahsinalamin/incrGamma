@@ -88,7 +88,7 @@ NB.gamma <- function(filename,class="-1"){
   partial_gamma <- matrix()
   
   ### NB in R ###
-  # NB_R= naiveBayes(X_Matrix$V31~ .,data = X_Matrix)
+  # NB_R= naiveBayes(X_Matrix$V31~ .,data = X_Matrix) #change this line based on the input data set
   # NB_prior_R = max(NB_R$apriori/nrow(X_Matrix))
   # NB_musigma_R = do.call(rbind.data.frame, NB_R$tables)
   # NB_mu_R = max(NB_musigma_R$V1)
