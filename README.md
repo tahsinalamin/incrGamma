@@ -4,11 +4,11 @@ Incremental computation of machine learning models with Gamma summarization  mat
 ## HOW TO COMPILE ##
 **Command to build the package**
 
-R CMD build incrGamma
+- R CMD build incrGamma
 
 **Command install the package**
 
-R CMD INSTALL build_package_name
+- R CMD INSTALL build_package_name
 
 
 ## HOW TO RUN ##
