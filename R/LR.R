@@ -24,6 +24,7 @@ gamma.test <- function(filename, sparse="Y") {
   #print(sparse)
   
   #read the dataset
+  X_Matrix = read.csv(filename, header =TRUE)
   partial_gamma <- matrix() #gamma for each chunk
   #ChunkSize = 2000
   ChunkSize = as.integer(sqrt(nrow(X_Matrix)))
