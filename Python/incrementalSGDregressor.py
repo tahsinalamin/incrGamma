@@ -44,24 +44,16 @@ lr = linear_model.LinearRegression()
 mlr=lr.fit(X,y)
 """
 #####
-trains = pd.read_csv(input_dataset, chunksize=20)
+#trains = pd.read_csv(input_dataset, chunksize=20)
 #model = SGDRegressor() #incremental SGDregressor from sklearn
+chunkSize = 20
 
-for train in trains:
-    #sc = StandardScaler()
-    #train=sc.fit_transform(train)
-    #print(train)
-    #X = train[:,0:-1] #extract X variables and convert it to numpy array
-    #y = train[:,-1] #extract y and convert and convert it to numpy array
-    #X = train.iloc[:,0:-1].to_numpy() #extract X variables and convert it to numpy array
-    #y = train.iloc[:,-1].to_numpy() #extract y and convert and convert it to numpy array
-
+for train in pd.read_csv(input_dataset, chunksize=chunkSize):
     model = make_pipeline(StandardScaler(),SGDRegressor(max_iter=1000, tol=1e-3))
     X = model.named_steps['standardscaler'].fit_transform(train.iloc[:,0:-1])
     y = train.iloc[:,-1].to_numpy()
     model.named_steps['sgdregressor'].partial_fit(X,y)
     
-    #new_train = model.transform(train)
 
 end = time.time()
 
